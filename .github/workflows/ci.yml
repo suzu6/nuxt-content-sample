@@ -3,11 +3,9 @@ name: ci
 on:
   push:
     branches:
-      - main
       - master
   pull_request:
     branches:
-      - main
       - master
 
 jobs:
@@ -49,3 +47,6 @@ jobs:
 
       - name: Run tests 🧪
         run: yarn test
+
+      - name: Run generate 
+        run: yarn generate

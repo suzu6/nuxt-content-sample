@@ -1,4 +1,4 @@
-# aaa
+# nuxt-content-sample
 
 ## Build Setup
 
