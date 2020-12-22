@@ -2,7 +2,8 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">aaa</h1>
+      <h1 class="title">nuxt-content-sample</h1>
+      <h2 class="title">by suzu6</h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
