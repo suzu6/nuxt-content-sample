@@ -50,6 +50,8 @@ jobs:
 
       - name: Run generate 
         run: yarn generate
+        env:
+            GENERATED_BY: "GitHub actions"
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
