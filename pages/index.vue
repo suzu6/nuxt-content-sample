@@ -3,8 +3,8 @@
     <div>
       <Logo />
       <h1 class="title">nuxt-content-sample</h1>
-      <p>by suzu6</p>
-      <p>at {{ service_name }}</p>
+      <p>@suzu6</p>
+      <p>by {{ generatedBy }}</p>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -33,7 +33,7 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      service_name: this.$config.SERVICE_NAME
+      generatedBy: this.$config.GENERATED_BY
     }
   }
 })
