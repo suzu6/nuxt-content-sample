@@ -3,7 +3,8 @@
     <div>
       <Logo />
       <h1 class="title">nuxt-content-sample</h1>
-      <h2 class="title">by suzu6</h2>
+      <p>by suzu6</p>
+      <p>at {{ service_name }}</p>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -29,7 +30,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      service_name: this.$config.SERVICE_NAME
+    }
+  }
+})
 </script>
 
 <style>

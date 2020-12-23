@@ -44,6 +44,11 @@ export default {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
 
+  // https://ja.nuxtjs.org/docs/2.x/configuration-glossary/configuration-runtime-config/
+  publicRuntimeConfig: {
+    SERVICE_NAME : process.env.SERVICE_NAME
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     postcss: {
