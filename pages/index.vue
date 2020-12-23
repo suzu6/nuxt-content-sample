@@ -33,9 +33,9 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      generatedBy: this.$config.GENERATED_BY
+      generatedBy: this.$config.GENERATED_BY,
     }
-  }
+  },
 })
 </script>
 

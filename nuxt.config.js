@@ -46,7 +46,7 @@ export default {
 
   // https://ja.nuxtjs.org/docs/2.x/configuration-glossary/configuration-runtime-config/
   publicRuntimeConfig: {
-    GENERATED_BY : process.env.GENERATED_BY
+    GENERATED_BY: process.env.GENERATED_BY
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
