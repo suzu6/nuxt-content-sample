@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <NuxtLogo />
       <h1 class="title">nuxt-content-sample</h1>
       <p>@suzu6</p>
       <p>by {{ generatedBy }}</p>
@@ -23,14 +23,20 @@
           GitHub
         </a>
       </div>
+      <PostsLinks />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import PostsLinks from '@/components/PostsLinks.vue'
 
 export default Vue.extend({
+  name: 'Home',
+  components: {
+    PostsLinks,
+  },
   data() {
     return {
       generatedBy: this.$config.GENERATED_BY,
