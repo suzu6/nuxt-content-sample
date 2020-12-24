@@ -10,13 +10,13 @@
 
 <script lang="ts">
 import { IContentDocument } from '@nuxt/content/types/content'
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
 
 export default Vue.extend({
   name: 'LatestPosts',
   data() {
     return {
-      posts: new Array<IContentDocument>(),
+      posts: [],
     }
   },
   mounted() {
@@ -33,7 +33,7 @@ export default Vue.extend({
         if (!Array.isArray(responce)) {
           responce = new Array<IContentDocument>(responce)
         }
-        this.posts = responce
+        this.posts = responce as []
       })
     },
   },

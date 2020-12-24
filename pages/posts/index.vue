@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
 import PostsLinks from '@/components/PostsLinks.vue'
 
 export default Vue.extend({

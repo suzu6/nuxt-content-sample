@@ -24,8 +24,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
-import Tag from '@/Domains/Models/Tag'
+import Vue from 'vue'
 
 export default Vue.extend({
   name: 'PostLink',
@@ -52,7 +51,6 @@ export default Vue.extend({
     },
     tags: {
       type: Array,
-      default: [],
       required: false,
     },
     showTags: {

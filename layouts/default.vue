@@ -14,14 +14,12 @@
 </template>
 
 <script lang="ts">
-import GitHubLogo from '@/components/GitHubLogo.vue'
 import HeaderMenue from '@/components/common/HeaderMenue.vue'
 import MyFooter from '@/components/common/MyFooter.vue'
 
 export default {
   components: {
     HeaderMenue,
-    GitHubLogo,
     MyFooter,
   },
   head: {

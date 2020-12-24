@@ -13,9 +13,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
 import TagService from '@/app/Services/TagService'
-import Tag from '@/Domains/Models/Tag'
 export default Vue.extend({
   name: 'TagsPage',
   fetch() {
@@ -23,7 +22,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      tags: new Array<Tag>(),
+      tags: [],
       tagService: new TagService(),
     }
   },
@@ -35,7 +34,7 @@ export default Vue.extend({
 
       query.fetch().then((responce) => {
         this.tagService.setTags(responce)
-        this.tags = this.tagService.getTags()
+        this.tags = this.tagService.getTags() as []
       })
     },
   },

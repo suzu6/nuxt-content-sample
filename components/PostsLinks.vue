@@ -21,10 +21,8 @@
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
 import PostLinkService from '@/app/Services/PostLinkService'
-import PostLink from '@/Domains/Models/PostLink'
 import PLink from '@/components/common/PostLink.vue'
 
 export default Vue.extend({
@@ -60,7 +58,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      posts: new Array<PostLink>(),
+      posts: [],
       postLinkService: new PostLinkService(),
     }
   },
@@ -87,7 +85,7 @@ export default Vue.extend({
 
       const responce = await query.fetch()
       this.postLinkService.setPostLinks(responce, this.tag, limit)
-      this.posts = this.postLinkService.getPostLinks()
+      this.posts = this.postLinkService.getPostLinks() as []
     },
   },
 })

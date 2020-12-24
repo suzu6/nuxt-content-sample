@@ -7,9 +7,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
 import PostsLinks from '@/components/PostsLinks.vue'
-import Tag from '@/Domains/Models/Tag'
 
 export default Vue.extend({
   name: 'Tags',
