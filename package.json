@@ -15,7 +15,7 @@
   "dependencies": {
     "@mdi/font": "^5.8.55",
     "@nuxt/content": "^1.11.1",
-    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-adsense": "^1.1.3",
     "@nuxtjs/sitemap": "^2.4.0",
