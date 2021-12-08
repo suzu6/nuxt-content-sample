@@ -51,7 +51,7 @@
     "jest": "^26.5.0",
     "node-sass": "^5.0.0",
     "prettier": "^2.1.2",
-    "sass-loader": "^10.1.0",
+    "sass-loader": "^12.4.0",
     "ts-jest": "^26.4.1",
     "vue-jest": "^3.0.4"
   }
